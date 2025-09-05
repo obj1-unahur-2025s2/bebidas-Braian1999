@@ -1,0 +1,22 @@
+import bebidas.*
+import tito.*
+
+
+describe "name" {
+    test "tito consume 3 dosis de whisky y su rendimiento es de 0,729" {
+        tito.consumir(3,whisky)
+        assert.equals(0.729, tito.rendimiento())
+    }
+    test "tito consume 3 dosis de whisky y su velocidad es 6,3 m/s " {
+        tito.consumir(1,whisky)
+        assert.equals(6.3, tito.velocidad())
+    }
+    test "tito consume 25 dosis de terere y su rendimiento es de 2.5" {
+        tito.consumir(12, terere)
+        assert.equals(1.2, tito.rendimiento())
+    }
+    test "tito consume 12 dosis de terere y su velocidad es de 8,4" {
+        tito.consumir(12, terere)
+        assert.equals(8.4, tito.velocidad())
+    }
+}
